@@ -1,0 +1,260 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    line-height: 1.8;
+    overflow-y: scroll; /*Desplazamiento para direccionar la pagina verticalmente*/
+    overflow-x: scroll; /*Desplazamiento para direccionar la pagina horizontalmente*/
+    width: 100%; /* Asegura que el body ocupe todo el ancho */
+    min-width: 1200px; /* Define un mínimo ancho de la página (puedes ajustar este valor) */
+    
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: hsl(0, 88%, 17%);
+    color: white;
+    padding: 10px 30px;
+    height: 250px;
+    width: 100%;
+}
+
+/* Logo J&D INDUSTRIAL*/
+.logo-img {
+    width: 250px;
+    height: 250px;
+    margin-left: -800px;
+    display: flex;
+}
+
+
+.logo-img_contacto{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    margin-left: -600px;
+}
+header h1 {
+    margin: 0 20px;
+    font-size: 2rem;
+    position: relative;
+    top: -10px;
+}
+
+/* Navegación dentro del header */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25px 20px;
+    display: inline-block;
+   
+
+
+}
+
+nav a:hover {
+    background-color: navy;
+    border-radius: 25px;
+    
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: navy;
+    color: white;
+    height: 350px;
+    width: 100%;
+   
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background:#008000; /*Color verde del boton de whatsapp*/
+    color: #ffffff;/*Color blanco de la letra*/
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #e0e0e0;
+}
+
+/* Contenido */
+.contenido {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-style: arial ;
+    margin-left: 600px;
+    text-align: justify;
+}
+
+.contenido h2, h3 {
+    color: #000000;
+    margin-top:100px;
+    font-style: arial black;
+}
+
+.contenido h2, h3 {
+    color: #000000;
+    margin-top: 20px;
+}
+
+.contenido h4 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold; /* opcional */
+}
+.contenido ul {
+    list-style: disc inside;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Tamaño personalizado del carrusel */
+#carruselHerreria {
+    max-width: 500px; /* tamaño del carrusel */
+    float: right; /* Para colocarlo a la derecha */
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Ajuste del tamaño de las imágenes del carrusel */
+  #carruselHerreria .carousel-inner img {
+    max-height: 500px; /* Altura máxima de las imágenes */
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  /* Responsividad general */
+@media (max-width: 1200px) {
+    body {
+        min-width: unset;
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .logo-img {
+        margin-left: 0;
+        width: 250px;
+        height: auto;
+    }
+
+    .logo-img_contacto{
+        width: 250px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .contenido {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #carruselHerreria {
+        float: none;
+        margin: 20px auto;
+        display: block;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .contenido h2, 
+    .contenido h3 {
+        font-size: 1.2rem;
+    }
+
+    #carruselHerreria .carousel-inner img {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 10px;
+        height: auto;
+    }
+
+    .logo-img {
+        width: 140px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+
+    .contenido {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
