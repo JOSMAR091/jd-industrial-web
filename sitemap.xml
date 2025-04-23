@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://JOSMAR091.github.io/jd-industrial-web/</loc> <!-- Página principal (Inicio) -->
+        <loc>https://jyd-industrialpr.com/</loc>
         <lastmod>2025-04-23</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://JOSMAR091.github.io/jd-industrial-web/quienes_somos.html</loc> <!-- Subpágina Quiénes somos -->
+        <loc>https://jyd-industrialpr.com/quienes_somos.html</loc>
         <lastmod>2025-04-23</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://JOSMAR091.github.io/jd-industrial-web/contacto.html</loc> <!-- Subpágina Contacto -->
+        <loc>https://jyd-industrialpr.com/contacto.html</loc>
         <lastmod>2025-04-23</lastmod>
         <priority>0.8</priority>
     </url>
