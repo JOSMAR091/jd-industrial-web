@@ -34,7 +34,7 @@ header {
 .logo-img {
     width: 250px;
     height: 250px;
-    margin-left: -400px;
+    margin-left: -600px;
     display: flex;
 }
 
@@ -43,7 +43,7 @@ header {
     width: 250px;
     height: 250px;
     display: flex;
-    margin-left: -500px;
+    margin-left: -600px;
 }
 header h1 {
     margin: 0 20px;
@@ -114,7 +114,7 @@ nav a:hover {
     margin: 40px auto;
     padding: 0 20px;
     font-style: arial ;
-    margin-left: 600px;
+    margin-left: -600px;
     text-align: justify;
 }
 
