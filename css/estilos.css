@@ -258,3 +258,12 @@ footer {
         font-size: 14px;
     }
 }
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
