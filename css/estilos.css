@@ -160,10 +160,9 @@ footer {
 
 /* Tamaño personalizado del carrusel */
 #carruselHerreria {
-    max-width: 500px; /* tamaño del carrusel */
-    float: right; /* Para colocarlo a la derecha */
-    margin-left: 20px;
-    margin-bottom: 20px;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    display: block;
   }
   
   /* Ajuste del tamaño de las imágenes del carrusel */
