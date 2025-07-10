@@ -33,17 +33,26 @@ header {
 /* Logo J&D INDUSTRIAL*/
 .logo-img {
     width: 250px;
-    height: 250px;
-    margin-left: -600px;
-    display: flex;
+  height: auto;
+  margin: 0 auto; /* Centrado automático */
+  display: block;
+}
 }
 
 
 .logo-img_contacto{
     width: 250px;
-    height: 250px;
-    display: flex;
-    margin-left: -600px;
+  height: auto;
+  margin: 0 auto; /* Centrado automático */
+  display: block;
+}
+
+.logo-img_quienes_somos{
+    width: 250px;
+  height: auto;
+  margin: 0 auto; /* Centrado automático */
+  display: block;
+}
 }
 header h1 {
     margin: 0 20px;
