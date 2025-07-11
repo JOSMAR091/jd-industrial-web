@@ -1,12 +1,13 @@
-function toggleModo() {
-  const body = document.body;
+document.addEventListener('DOMContentLoaded', function () {
   const boton = document.getElementById('modoBtn');
 
-  body.classList.toggle('dark-mode');
+  boton.addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
 
-  if (body.classList.contains('dark-mode')) {
-    boton.textContent = '☀️ Activar Modo Claro';
-  } else {
-    boton.textContent = '🌙 Activar Modo Oscuro';
-  }
-}
+    if (document.body.classList.contains('dark-mode')) {
+      boton.textContent = '☀️ Activar Modo Claro';
+    } else {
+      boton.textContent = '🌙 Activar Modo Oscuro';
+    }
+  });
+});
