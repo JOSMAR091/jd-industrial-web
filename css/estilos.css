@@ -1,3 +1,4 @@
+/* Estilos base */
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Encabezado */
 header {
   background-color: #222;
   color: #fff;
@@ -17,6 +19,7 @@ header {
   align-items: center;
 }
 
+/* Logo y navegación */
 .logo-nav {
   display: flex;
   align-items: center;
@@ -47,14 +50,23 @@ header {
   text-decoration: underline;
 }
 
-#toggleDarkMode {
+/* Botón de modo oscuro */
+#modoBtn {
   background-color: transparent;
   border: 1px solid white;
   color: white;
   padding: 5px 10px;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+#modoBtn:hover {
+  background-color: white;
+  color: #222;
+}
+
+/* Contenido principal */
 main.contenido {
   padding: 40px 20px;
   max-width: 800px;
@@ -62,6 +74,7 @@ main.contenido {
   text-align: justify;
 }
 
+/* Pie de página */
 footer {
   background-color: #111;
   color: white;
@@ -70,20 +83,32 @@ footer {
   margin-top: 50px;
 }
 
-/* Modo Oscuro */
+/* ===== Modo Oscuro ===== */
 body.dark-mode {
   background-color: #121212;
-  color: #fff;
+  color: #ffffff;
 }
 
 body.dark-mode header {
   background-color: #1f1f1f;
+  color: #fff;
 }
 
 body.dark-mode footer {
   background-color: #1f1f1f;
+  color: #ccc;
 }
 
-body.dark-mode a {
+body.dark-mode .nav-links a {
   color: #ccc;
+}
+
+body.dark-mode #modoBtn {
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+body.dark-mode #modoBtn:hover {
+  background-color: #ccc;
+  color: #121212;
 }
