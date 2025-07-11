@@ -1,12 +1,12 @@
-// Al cargar la página, revisa si el modo oscuro estaba activado antes
-window.onload = () => {
-  if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-  }
-};
+function toggleModo() {
+  const body = document.body;
+  const boton = document.getElementById('modoBtn');
 
-// Función que cambia el modo oscuro y guarda la preferencia
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+  body.classList.toggle('modo-oscuro');
+
+  if (body.classList.contains('modo-oscuro')) {
+    boton.textContent = '☀️ Activar Modo Claro';
+  } else {
+    boton.textContent = '🌙 Activar Modo Oscuro';
+  }
 }
