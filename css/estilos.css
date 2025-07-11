@@ -289,5 +289,59 @@ body.dark-mode .btn-noticia:hover {
   .noticia-card {
     max-width: 100%;
   }
+}/* Menú hamburguesa (oculto por defecto en escritorio) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
 }
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Menú normal */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+
+  .nav-menu ul {
+    display: block;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+}
+
 
