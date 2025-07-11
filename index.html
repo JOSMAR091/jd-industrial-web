@@ -3,42 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Inicio | J&D INDUSTRIAL</title>
+  <title>Inicio  | J&D INDUSTRIAL</title>
 
-  <!-- SEO Básico -->
   <meta name="description" content="Conoce a J&D Industrial, expertos en herrería y soldadura en Puerto Rico con más de 6 años de experiencia." />
   <meta name="keywords" content="herrero, herrería, soldadura, Puerto Rico, J&D Industrial, empresa" />
   <meta name="author" content="J&D Industrial" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Icono y Fuentes -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet" />
-
-  <!-- Bootstrap y Estilos -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
 <body>
-  <!-- Encabezado -->
   <header>
     <div class="logo-nav">
       <img src="imagenes/logo.png" alt="Logo J&D Industrial" class="logo-img" />
       <h1>J&D INDUSTRIAL</h1>
     </div>
-
     <!-- Menú Hamburguesa -->
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+<div class="menu-toggle" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 
-    <!-- Navegación -->
     <nav>
-      <ul class="nav-links nav-menu" id="navMenu">
+      <ul class="nav-links">
         <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="quienes_somos.html">Quiénes somos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -46,82 +39,84 @@
         <li><a href="noticias.html">Noticias</a></li>
       </ul>
     </nav>
-
-    <!-- Botón de modo oscuro -->
     <button id="modoBtn">🌙 Activar Modo Oscuro</button>
   </header>
 
-  <!-- Carrusel y texto al lado -->
-  <div class="carrusel-izquierda">
-    <!-- Carrusel a la izquierda -->
-    <div id="carruselHerreria" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
+  <main class="contenido">
+    <h1>Historia</h1>
+    <p class="text-justify">
+ J&D Industrial nació como respuesta a la creciente necesidad de soluciones de herrería y estructuras metálicas confiables, resistentes y hechas a la medida en Puerto Rico. Desde sus inicios, la empresa fue concebida con el objetivo de combinar experiencia técnica, compromiso y servicio al cliente para brindar resultados de calidad superior.
+    </p>
+    <p class="text-justify">
+     En los primeros años, el enfoque principal se centró en trabajos residenciales pequeños: la instalación y reparación de rejas, puertas metálicas, verjas y portones. Estos primeros proyectos permitieron establecer una base sólida de confianza en la comunidad, gracias a la puntualidad en las entregas, los acabados profesionales y la honestidad en el trato.
+    </p>
+
+    <h2></h2>
+    <p class="text-justify">
+     En los primeros años, el enfoque principal se centró en trabajos residenciales pequeños: la instalación y reparación de rejas, puertas metálicas, verjas y portones. Estos primeros proyectos permitieron establecer una base sólida de confianza en la comunidad, gracias a la puntualidad en las entregas, los acabados profesionales y la honestidad en el trato.
+    </p>
+
+    <h2></h2>
+    <p class="text-justify">
+    Con el paso del tiempo, la empresa comenzó a expandir su alcance y capacidad. Incorporó nuevas herramientas, maquinarias más modernas y un equipo de trabajo preparado para asumir retos mayores. Esto permitió atender también proyectos industriales y comerciales, como techos metálicos, marquesinas, estructuras reforzadas, pasamanos, escaleras, cerramientos perimetrales, y soluciones de seguridad adaptadas a cada cliente.
+    </p>
+
+   
+  </main>
+   <!-- Carrusel de imágenes -->
+  <div class="container my-4">
+    <div id="carruselHerreria" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+
         <div class="carousel-item active">
-          <img src="imagenes/Aluminio.jpeg" class="d-block w-100" alt="Aluminio">
+          <img src="../imagenes/Aluminio.jpeg" class="d-block w-100" alt="Aluminio">
         </div>
+
         <div class="carousel-item">
-          <img src="imagenes/Escalera.jpeg" class="d-block w-100" alt="Escalera">
+          <img src="../imagenes/Escalera.jpeg" class="d-block w-100" alt="Escalera">
         </div>
+
         <div class="carousel-item">
-          <img src="imagenes/Escalera_2_Descanso.jpeg" class="d-block w-100" alt="Escalera 2 Descanso">
+          <img src="../imagenes/Escalera_2_Descanso.jpeg" class="d-block w-100" alt="Escalera_2_Descanso">
         </div>
+
         <div class="carousel-item">
-          <img src="imagenes/Escalera_emergencia.jpeg" class="d-block w-100" alt="Escalera Emergencia">
+          <img src="../imagenes/Escalera_emergencia.jpeg" class="d-block w-100" alt="Escalera_emergencia">
         </div>
+
         <div class="carousel-item">
-          <img src="imagenes/Escalera_Plana.jpeg" class="d-block w-100" alt="Escalera Plana">
+          <img src="../imagenes/Escalera_Plana.jpeg" class="d-block w-100" alt="Escalera_Plana">
         </div>
+        
         <div class="carousel-item">
-          <img src="imagenes/Estructura.jpeg" class="d-block w-100" alt="Estructura">
+          <img src="../imagenes/Estructura.jpeg" class="d-block w-100" alt="Estructura">
         </div>
+
         <div class="carousel-item">
-          <img src="imagenes/Puerta_Corredisa.jpeg" class="d-block w-100" alt="Puerta Corredisa">
+          <img src="../imagenes/Puerta_Corredisa.jpeg" class="d-block w-100" alt="Puerta_Corredisa">
         </div>
+
         <div class="carousel-item">
-          <img src="imagenes/Puerta_Creacion.jpeg" class="d-block w-100" alt="Puerta Creación">
+          <img src="../imagenes/Puerta_Creacion.jpeg" class="d-block w-100" alt="Puerta_Creacion">
         </div>
+
         <div class="carousel-item">
-          <img src="imagenes/Puerta_Disenada.jpeg" class="d-block w-100" alt="Puerta Diseñada">
+          <img src="../imagenes/Puerta_Disenada.jpeg" class="d-block w-100" alt="Puerta_Diseñada">
         </div>
+
         <div class="carousel-item">
-          <img src="imagenes/Puerta_dobles.jpeg" class="d-block w-100" alt="Puerta Dobles">
+          <img src="../imagenes/Puerta_dobles.jpeg" class="d-block w-100" alt="Puerta_dobles">
         </div>
+
         <div class="carousel-item">
-          <img src="imagenes/Puerta_Tola_Cerrada.jpeg" class="d-block w-100" alt="Puerta Tola Cerrada">
+          <img src="../imagenes/Puerta_Tola_Cerrada.jpeg" class="d-block w-100" alt="Puerta_Tola_Cerrada">
         </div>
       </div>
 
-      <!-- Controles -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carruselHerreria" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carruselHerreria" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-
-    <!-- Texto a la derecha -->
-    <div class="texto-lado">
-      <h1>Historia</h1>
-      <p>
-        J&D Industrial nació como respuesta a la creciente necesidad de soluciones de herrería y estructuras metálicas confiables, resistentes y hechas a la medida en Puerto Rico.
-      </p>
-      <p>
-        En los primeros años, el enfoque principal se centró en trabajos residenciales pequeños: la instalación y reparación de rejas, puertas metálicas, verjas y portones. Estos primeros proyectos permitieron establecer una base sólida de confianza en la comunidad, gracias a la puntualidad en las entregas, los acabados profesionales y la honestidad en el trato.
-      </p>
-      <p>
-        Con el paso del tiempo, la empresa comenzó a expandir su alcance y capacidad. Incorporó nuevas herramientas, maquinarias más modernas y un equipo de trabajo preparado para asumir retos mayores. Esto permitió atender también proyectos industriales y comerciales, como techos metálicos, marquesinas, estructuras reforzadas, pasamanos, escaleras, cerramientos perimetrales, y soluciones de seguridad adaptadas a cada cliente.
-      </p>
-    </div>
-  </div>
-
-  <!-- Pie de página -->
   <footer class="bg-dark text-white text-center p-3 mt-5">
     <p>&copy; 2025 J&D Industrial. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
