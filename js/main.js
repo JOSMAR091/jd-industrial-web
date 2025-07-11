@@ -9,5 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       boton.textContent = '🌙 Activar Modo Oscuro';
     }
+    <script>
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+  }
+</script>
+
   });
 });
