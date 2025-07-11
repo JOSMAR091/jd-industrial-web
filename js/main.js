@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
   const boton = document.getElementById('modoBtn');
 
@@ -9,10 +10,5 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       boton.textContent = '🌙 Activar Modo Oscuro';
     }
-    <script>
-  function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("active");
-  }
   });
 });
-
